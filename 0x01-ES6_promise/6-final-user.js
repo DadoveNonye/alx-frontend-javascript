@@ -17,11 +17,17 @@ export default async function handleProfileSignup(
     const data = [
       {
         status: signUpProRes.status,
-        value: signUpProRes.value,
+        value:
+          signUpProRes.value === "fulfilled"
+            ? signUpProRes.value
+            : signUpProRes.reason,
       },
       {
         status: uploadproRes.status,
-        value: uploadproRes.value,
+        value:
+          uploadproRes.value === "fulfilled"
+            ? uploadproRes.value
+            : uploadproRes.reason,
       },
     ];
     return data;
