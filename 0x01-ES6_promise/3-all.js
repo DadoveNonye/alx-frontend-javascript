@@ -7,7 +7,7 @@ async function handleProfileSignup() {
       createUser(),
     ]);
 
-    console.log(` ${body} ${firstName} ${lastName} `);
+    console.log(`${body} ${firstName} ${lastName}`);
   } catch (error) {
     console.log("Signup system offline");
   }
