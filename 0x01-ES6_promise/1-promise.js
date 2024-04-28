@@ -8,3 +8,5 @@ function getFullResponseFromAPI(success) {
     return Promise.reject(new Error("The fake API is not working currently"));
   }
 }
+
+export default getFullResponseFromAPI;
