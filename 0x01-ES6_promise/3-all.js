@@ -13,4 +13,4 @@ async function handleProfileSignup() {
   }
 }
 
-handleProfileSignup();
+export default handleProfileSignup;

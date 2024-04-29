@@ -20,4 +20,4 @@ async function asyncUploadUser() {
     return { photo: null, user: null };
   }
 }
-asyncUploadUser();
+export default asyncUploadUser;
