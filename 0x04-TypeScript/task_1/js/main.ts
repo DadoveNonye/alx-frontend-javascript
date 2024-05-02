@@ -28,3 +28,7 @@ class Teacher {
     return this._lastName;
   }
 }
+
+interface Directors extends Teacher {
+  numberOfReports: number;
+}
